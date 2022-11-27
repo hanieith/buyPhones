@@ -12,7 +12,7 @@ li {
 
 .header{
     background: #F13C6E;
-;
+    margin-bottom: 50px;
 }
 
 .list-group {
@@ -29,3 +29,8 @@ li:before{
     position: absolute; top: 0; left: 0;
     color: White;
 }
+
+.sell-phone {
+color: black;
+}
+
