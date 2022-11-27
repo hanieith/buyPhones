@@ -45,3 +45,13 @@ li:before{
     margin: 0 auto;
 }
 
+.all-technik{
+    margin-bottom: 50px;
+}
+
+.box{
+    height: 230px;
+    background: #F13C6E;
+    border-radius: 15px;
+    color: white;
+}
