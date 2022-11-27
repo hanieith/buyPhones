@@ -3,7 +3,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     background: #EFEFEF;
-    color: white;
+    color: black;
 }
 
 li {
@@ -13,6 +13,7 @@ li {
 .header{
     background: #F13C6E;
     margin-bottom: 50px;
+    color: white;
 }
 
 .list-group {
@@ -27,10 +28,20 @@ li{
 li:before{
     content: '✔';
     position: absolute; top: 0; left: 0;
-    color: White;
+
 }
 
 .sell-phone {
-color: black;
+
+    margin-bottom: 50px;
+}
+
+.sell-card {
+    background: #EFEFEF; border: none;
+}
+
+.sell-card img{
+    max-width: 200px;
+    margin: 0 auto;
 }
 
