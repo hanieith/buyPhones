@@ -51,8 +51,6 @@ li:before{
     background: #F13C6E;
     border-radius: 15px;
     color: white;
-}
-
-.box-list{
-    margin: 5%;
+    flex-basis: 48%;
+    margin: 0 1%;
 }
