@@ -54,3 +54,12 @@ li:before{
     flex-basis: 48%;
     margin: 0 1%;
 }
+
+.feedback-form img{
+    max-width: 350px;
+
+}
+
+.header img{
+height: 500px;
+}
