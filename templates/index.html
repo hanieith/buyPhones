@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b8faf271cf.js" crossorigin="anonymous"></script>
-    <link href="css/style.css" rel="stylesheet">
-    <title>Hello, world!</title>
+    <link href="/static/css/style.css" rel="stylesheet">
+    <title>Скупка Минск</title>
 </head>
 <body>
 <section class="header pt-2">
@@ -43,7 +43,7 @@
             </div>
             <div class="col-sm-12 col-md-6 col-xl-6">
                 <div class="d-flex justify-content-center p-4">
-                    <img src="img/pngwing.com.png">
+                    <img src="../static/img/pngwing.com.png">
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
         <div class="row">
             <div class="col-xs-6 col-md-6 col-lg-3">
                 <div class="card sell-card text-center">
-                    <img src="img/call.png" class="card-img-top img-fluid" alt="...">
+                    <img src="../static/img/call.png" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <p class="card-text">Звоните нашему консультанту, чтобы продать ваш телефон. Работаем ежедневно
                             с 9:00 до 20:00</p>
@@ -64,7 +64,7 @@
             </div>
             <div class="col-xs-6 col-md-6 col-lg-3">
                 <div class="card sell-card text-center">
-                    <img src="img/talk.png" class="card-img-top img-fluid" alt="...">
+                    <img src="../static/img/talk.png" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <p class="card-text">Согласовываем цену, которую вы хотите получить за ваше устройство и
                             приходим к договорённости</p>
@@ -73,7 +73,7 @@
             </div>
             <div class="col-xs-6 col-md-6 col-lg-3">
                 <div class="card sell-card text-center">
-                    <img src="img/courier.png" class="card-img-top img-fluid" alt="...">
+                    <img src="../static/img/courier.png" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <p class="card-text">Наш курьер-оценщик бесплатно выезжает к вам на указанный адрес</p>
                     </div>
@@ -81,7 +81,7 @@
             </div>
             <div class="col-xs-6 col-md-6 col-lg-3">
                 <div class="card sell-card text-center">
-                    <img src="img/money.png" class="card-img-top img-fluid" alt="...">
+                    <img src="../static/img/money.png" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <p class="card-text">После осмотра вашего устройства, курьер-оценщик отдаёт вам всю сумму
                             наличными </p>
@@ -97,7 +97,7 @@
         <div class="row">
             <div class="col-sm-12 col-md-4 col-lg-4">
                 <div class="card sell-card text-center">
-                    <img src="img/smartphone.png" class="card-img-top" alt="...">
+                    <img src="../static/img/smartphone.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Выкупаем мобильные телефоны любых брендов в любом состоянии</p>
                     </div>
@@ -105,7 +105,7 @@
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4">
                 <div class="card sell-card text-center">
-                    <img src="img/laptop.png" class="card-img-top" alt="...">
+                    <img src="../static/img/laptop.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Выкупаем ноутбуки различных брендов в любом состоянии</p>
                     </div>
@@ -113,7 +113,7 @@
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4">
                 <div class="card sell-card text-center">
-                    <img src="img/ipad.png" class="card-img-top" alt="...">
+                    <img src="../static/img/ipad.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Выкупаем планшеты и разные гаджеты в любом состоянии</p>
                     </div>
@@ -122,38 +122,41 @@
         </div>
     </div>
 </section>
-
 <section class="feedback-form">
     <div class="container">
         <div class="row">
             <div id="forma" class="col-sm-12 col-md-6 col-lg-6">
                 <h3 class="text-center mb-3">Напишите нам</h3>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Ваше имя</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ваше имя">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput2" class="form-label">Ваш контактный номер</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput2"
-                           placeholder="+375-29-000-00-00">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Ваше сообщение</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
-                              placeholder="Напишите марку вашего телефона, его характеристики, состояние, какие есть дефекты и неисправности"></textarea>
-                </div>
+                <form action="/" method="post" class="form-contact" id="contactform">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Ваше имя</label>
+                        <input name="name" type="text" class="form-control" id="exampleFormControlInput1"
+                               placeholder="Ваше имя">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput2" class="form-label">Ваш контактный номер</label>
+                        <input name="phone" type="text" class="form-control" id="exampleFormControlInput2"
+                               placeholder="+375-29-000-00-00">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea3" class="form-label">Ваше сообщение</label>
+                        <textarea name="text" class="form-control" id="exampleFormControlTextarea3" rows="5"
+                                  placeholder="Напишите марку вашего телефона, его характеристики, состояние, какие есть дефекты и неисправности"></textarea>
+                    </div>
+                    <input type="submit" value="Отправить"/>
+                </form>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 mb-5">
                 <div class="d-flex justify-content-center">
-                    <img class="img-fluid" src="img/pngegg.png">
+                    <img class="img-fluid" src="../static/img/pngegg.png">
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+<script src="/static/js/main.js"></script>
 </body>
 </html>
