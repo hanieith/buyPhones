@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    background: #E6E6FA;
+    background: #EFEFEF;
     color: black;
 }
 
@@ -11,7 +11,7 @@ li {
 }
 
 .header{
-    background: #66CDAA;
+    background: #F13C6E;
     margin-bottom: 50px;
     color: white;
 }
@@ -34,7 +34,7 @@ li:before{
 }
 
 .sell-card {
-    background: #E6E6FA; border: none;
+    background: #EFEFEF; border: none;
 }
 
 .sell-card img{
@@ -62,18 +62,4 @@ li:before{
 
 .header img{
 height: 500px;
-}
-
-.btn-color {
-    background: white;
-}
-
-label {
-    text-align: center;
-width: 100%;
-}
-
-input {
-    text-align: center;
-width: 100%;
 }
