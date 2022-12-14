@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 import telebot
 
 bot = telebot.TeleBot('5806025745:AAEM-GLoUenhn8MPl9awRm0E7X1x-3o7GY4')
@@ -14,7 +14,8 @@ def hello() -> str:
         phone = request.form['phone']
         text = request.form['text']
         bot.send_message(-863962232, f'{name} {phone} {text}')
-        print('succes')
+        return jsonify({'success': 'Заявка успешно отправлена!'})
     return render_template('index.html')
+
 
 app.run()

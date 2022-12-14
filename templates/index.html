@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/b8faf271cf.js" crossorigin="anonymous"></script>
     <link href="/static/css/style.css" rel="stylesheet">
     <title>Скупка Минск</title>
@@ -129,7 +130,9 @@
         <div class="row">
             <div id="forma" class="col-sm-12 col-md-6 col-lg-6">
                 <h3 class="text-center mb-3">Напишите нам</h3>
-                <form action="/" method="post" class="form-contact" id="contactform">
+                <div class="alert alert-success text-center" id="successAlert" role="alert" style="display: none;"></div>
+                <div class="alert alert-danger text-center" id="errorAlert" role="alert" style="display: none;"></div>
+                <form method="post" class="form-contact" id="contactform">
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Ваше имя</label>
                         <input name="name" type="text" class="form-control" id="exampleFormControlInput1"
